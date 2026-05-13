@@ -128,7 +128,7 @@ If `aud = 00000003-0000-0000-c000-000000000046`, it's a **Microsoft Graph** toke
 |---------|------------------------------------------|
 | `aud`   | API audience (URL or identifier)         |
 | `iss`   | `https://{tenant}.auth0.com/`            |
-| `sub`   | User ID (`auth0|...`)                    |
+| `sub`   | User ID (`auth0\|...`)                   |
 | `gty`   | Grant type                               |
 
 ### Cognito (AWS)
@@ -147,7 +147,7 @@ If `aud = 00000003-0000-0000-c000-000000000046`, it's a **Microsoft Graph** toke
 1. Open F12 -> Network
 2. Trigger an action that calls your API (refresh, click)
 3. Pick any request, open Headers -> Request Headers
-4. Copy the value of `Authorization: Bearer eyJ...` (drop the `Bearer ` prefix)
+4. Copy the value of `Authorization: Bearer eyJ...` (drop the `Bearer` prefix and the space after it)
 
 ### MSAL session storage
 

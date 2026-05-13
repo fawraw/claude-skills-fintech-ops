@@ -204,6 +204,6 @@ show interfaces <port> | include error
 
 ## Related skills
 
-- [`cisco-audit`](#): full read-only audit of a switch
+- `cisco-audit`: full read-only audit of a switch
 - `cisco-port-config-clone`: clone or modify port config after a trace
 - Vendor inventory of switches and their SSH quirks

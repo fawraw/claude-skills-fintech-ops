@@ -155,6 +155,6 @@ Expected: a large majority of `101` status codes. A high `200` rate means traps 
 
 ## References
 
-- nginx WebSocket docs: https://nginx.org/en/docs/http/websocket.html
+- nginx WebSocket docs: <https://nginx.org/en/docs/http/websocket.html>
 - RFC 6455 (the WebSocket protocol)
 - RFC 8441 (Bootstrapping WebSockets with HTTP/2)

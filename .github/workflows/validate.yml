@@ -33,8 +33,8 @@ jobs:
           checked = 0
 
           for path in sorted(repo_root.rglob("*.md")):
-              # Skip the top-level README and any docs/ index
-              if path.name == "README.md":
+              # Skip top-level docs that are not skills
+              if path.name in {"README.md", "CHANGELOG.md", "CONTRIBUTING.md", "CODE_OF_CONDUCT.md", "SECURITY.md"}:
                   continue
               if path.parts[0] in {".github", "docs"}:
                   continue

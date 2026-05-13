@@ -1,6 +1,6 @@
 ---
 name: kafka-integration
-description: Integrate services with a Kafka cluster -- SASL SCRAM auth, topic naming and retention, Python confluent-kafka consumer / producer, monitoring, and audit-feed schemas.
+description: Integrate services with a Kafka cluster: SASL SCRAM auth, topic naming and retention, Python confluent-kafka consumer / producer, monitoring, and audit-feed schemas.
 ---
 
 # Kafka Integration Patterns
@@ -58,7 +58,7 @@ The same `bootstrap-server 127.0.0.1:9094` admin path bypasses SASL (intentional
 | `<service>.<entity>`             | `matching.trades`, `matching.orders`, `matching.sessions` |
 | `prices.<source>.<asset-class>`  | `prices.gotx.rates`, `prices.gotx.fx` |
 
-Avoid camelCase or under_scores -- dots are the convention and play nicely with ACLs.
+Avoid camelCase or under_scores: dots are the convention and play nicely with ACLs.
 
 ## Topic creation
 
@@ -157,7 +157,7 @@ def publish(producer: Producer, topic: str, key: str, payload: dict) -> None:
     # Flush on a cadence, not after every message, to keep batching effective
 ```
 
-Always set a `key` -- it pins messages with the same key to the same partition, preserving per-key ordering. For trade and order feeds, use the trade ID or order ID.
+Always set a `key`: it pins messages with the same key to the same partition, preserving per-key ordering. For trade and order feeds, use the trade ID or order ID.
 
 ## Example schemas
 

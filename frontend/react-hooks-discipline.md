@@ -1,6 +1,6 @@
 ---
 name: react-hooks-discipline
-description: The five React rules that prevent 95% of runtime crashes -- hooks before early returns, defensive rendering for async data, stable list keys, useEffect cleanup, Map / Set state instances.
+description: The five React rules that prevent 95% of runtime crashes: hooks before early returns, defensive rendering for async data, stable list keys, useEffect cleanup, Map / Set state instances.
 ---
 
 # React Hooks Discipline
@@ -166,7 +166,7 @@ Same applies to `Set`, plain objects, and arrays when used as state. React relie
 
 ## Pre-deploy checklist
 
-- [ ] `grep useEffect src/App.tsx` -- all of them appear **before** the first `return (`
+- [ ] `grep useEffect src/App.tsx`: all of them appear **before** the first `return (`
 - [ ] Every `.toFixed` / `.toString` / `.map` has a null / undefined / NaN guard
 - [ ] `parseFloat` results protected with `|| fallback`, not `?? fallback`
 - [ ] List keys are stable (item id), not index, unless the list is truly immutable

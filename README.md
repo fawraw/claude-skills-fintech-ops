@@ -37,7 +37,7 @@ Generic LLM advice on financial markets, network gear, or broker-grade infra is 
 | Skill | What it covers |
 |---|---|
 | [`nginx-websocket`](network/nginx-websocket.md) | The three classic WebSocket reverse-proxy traps (HTTP/2, hardcoded Connection header, default timeouts) and a tested vhost template |
-| [`cisco-port-trace-device`](network/cisco-port-trace-device.md) | Identify the device behind a switch port -- MAC + CDP / LLDP + ARP + DHCP |
+| [`cisco-port-trace-device`](network/cisco-port-trace-device.md) | Identify the device behind a switch port: MAC + CDP / LLDP + ARP + DHCP |
 | [`vpn-debug`](network/vpn-debug.md) | Systematic debugging of an IPsec / IKEv2 tunnel on Palo Alto (proxy-IDs, SAs, routes, security rules, IKE logs) |
 
 ### Frontend (1)

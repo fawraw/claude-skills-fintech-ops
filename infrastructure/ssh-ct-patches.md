@@ -77,7 +77,7 @@ ssh <user>@<pve-host> "sudo pct push <ctid> /tmp/patch.py /tmp/patch.py"
 ssh <user>@<pve-host> "sudo pct exec <ctid> -- python3 /tmp/patch.py"
 ```
 
-Backticks, `${}`, dollar-quoted strings -- everything arrives intact.
+Backticks, `${}`, dollar-quoted strings: everything arrives intact.
 
 ## Pattern 3: inline heredoc with manual escaping
 
@@ -206,7 +206,7 @@ curl -fsS http://<ct-ip>:<port>/api/v1/<endpoint> | head
 - No `sqlite3` CLI on slim Debian images: use Python's `sqlite3` module
 - `pip install` needs `--break-system-packages` on PEP 668-enforced installs
 - `pct push` reads from the Proxmox host filesystem; `scp` first if the file is on your laptop
-- Container running as `root` is convenient but tightens the blast radius -- weigh the risk
+- Container running as `root` is convenient but tightens the blast radius: weigh the risk
 - `npm run build` must run from inside the front-end directory; the cache is per-directory
 
 ## When this skill applies

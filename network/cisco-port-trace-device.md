@@ -1,6 +1,6 @@
 ---
 name: cisco-port-trace-device
-description: Identify what device is plugged into a Cisco switch port -- MAC + CDP/LLDP + ARP + DHCP. Handles IP phones, DECT bases, workstations, printers, and dead ports.
+description: Identify what device is plugged into a Cisco switch port: MAC + CDP/LLDP + ARP + DHCP. Handles IP phones, DECT bases, workstations, printers, and dead ports.
 ---
 
 # Trace a Device Behind a Cisco Port
@@ -48,7 +48,7 @@ show running-config interface <port>
 
 What you want to see: description, access / voice VLAN, status (`connected` vs `notconnect` vs `err-disabled`), negotiated speed / duplex.
 
-### 3. MAC table -- the MAC behind the port
+### 3. MAC table: the MAC behind the port
 
 ```
 show mac address-table interface <port>
@@ -204,6 +204,6 @@ show interfaces <port> | include error
 
 ## Related skills
 
-- [`cisco-audit`](#) -- full read-only audit of a switch
-- `cisco-port-config-clone` -- clone or modify port config after a trace
+- [`cisco-audit`](#): full read-only audit of a switch
+- `cisco-port-config-clone`: clone or modify port config after a trace
 - Vendor inventory of switches and their SSH quirks

@@ -40,7 +40,7 @@ Capture:
 show vpn ipsec-sa | match <tunnel-name>
 ```
 
-Each proxy-ID should appear with a non-zero SPI. A missing SA means that specific proxy-ID never negotiated -- check IKE logs for `no-proposal` or `child-fail`.
+Each proxy-ID should appear with a non-zero SPI. A missing SA means that specific proxy-ID never negotiated: check IKE logs for `no-proposal` or `child-fail`.
 
 ## Step 3: proxy-IDs in detail
 
@@ -104,10 +104,10 @@ Substrings worth grepping for:
 |-------------------|------------------------------------------------------|
 | `nego-child-succ` | child SA negotiated (good)                           |
 | `nego-child-st`   | child SA started (intermediate)                      |
-| `child-fail`      | child SA failed -- read the next line for the reason |
-| `no-proposal`     | crypto mismatch -- check encryption / hash / DH       |
-| `id-mismatch`     | proxy-ID mismatch -- subnets differ across sides     |
-| `ike-sa-delete`   | the peer dropped the SA -- often a config change     |
+| `child-fail`      | child SA failed: read the next line for the reason |
+| `no-proposal`     | crypto mismatch: check encryption / hash / DH       |
+| `id-mismatch`     | proxy-ID mismatch: subnets differ across sides     |
+| `ike-sa-delete`   | the peer dropped the SA: often a config change     |
 | `auth-failed`     | wrong PSK or wrong cert                              |
 
 ## Step 8: force renegotiation

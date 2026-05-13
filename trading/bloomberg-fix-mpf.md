@@ -1,6 +1,6 @@
 ---
 name: bloomberg-fix-mpf
-description: Build a Bloomberg FIX-MPF (FIX 5.0 SP2) contributor in Python -- Logon, Heartbeat, SetupMonitorRequest, MarketDataIncrementalRefresh, TLS mutual auth, dual-DC failover, the seven recurrent pitfalls.
+description: Build a Bloomberg FIX-MPF (FIX 5.0 SP2) contributor in Python: Logon, Heartbeat, SetupMonitorRequest, MarketDataIncrementalRefresh, TLS mutual auth, dual-DC failover, the seven recurrent pitfalls.
 ---
 
 # Bloomberg FIX-MPF Contributor
@@ -256,7 +256,7 @@ curl ifconfig.me   # confirm the IP matches what Bloomberg has allow-listed
 
 ### 5. Page must exist before USMQ
 
-Sending `USMQ` for a non-existent page returns a `UMDA reject`. The page is provisioned by Bloomberg during onboarding -- verify in `EC <GO>` (Enterprise Console) on the Bloomberg terminal before testing.
+Sending `USMQ` for a non-existent page returns a `UMDA reject`. The page is provisioned by Bloomberg during onboarding: verify in `EC <GO>` (Enterprise Console) on the Bloomberg terminal before testing.
 
 ### 6. 60-second dedup window
 

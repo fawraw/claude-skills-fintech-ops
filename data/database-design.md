@@ -1,6 +1,6 @@
 ---
 name: database-design
-description: Database schema design for trading and FinTech back-ends -- tech choice, naming, audit trail, migrations, indexing, backup, with reference DDL for a matching platform.
+description: Database schema design for trading and FinTech back-ends: tech choice, naming, audit trail, migrations, indexing, backup, with reference DDL for a matching platform.
 ---
 
 # Database Design for FinTech Back-ends
@@ -110,7 +110,7 @@ CREATE TABLE audit_log (
 );
 ```
 
-`audit_log` is append-only by convention -- no `UPDATE`, no `DELETE`. Enforce with revoked privileges or a `BEFORE UPDATE / DELETE` trigger that raises.
+`audit_log` is append-only by convention: no `UPDATE`, no `DELETE`. Enforce with revoked privileges or a `BEFORE UPDATE / DELETE` trigger that raises.
 
 ## Index strategy
 
@@ -161,7 +161,7 @@ CREATE TRIGGER orders_audit AFTER INSERT OR UPDATE OR DELETE
 
 - Use a real migration tool: **Alembic** (Python/SQLAlchemy), **dbmate** (lang-agnostic), or your framework's built-in.
 - One migration per logical change. Keep them small.
-- **Reversible** when feasible -- write `down` even if you never plan to run it.
+- **Reversible** when feasible: write `down` even if you never plan to run it.
 - Naming: `YYYYMMDDHHMMSS_short_description.sql`.
 - **Never modify** a migration once it has been applied in production. Add a new migration instead.
 

@@ -1,6 +1,6 @@
 ---
 name: zar-irs-finance
-description: Quick reference for ZAR IRS / OIS calculations -- spreads in basis points, DV01 / PV01, USD-to-ZAR nominal conversion, FRA and forward-forward conventions, ZARONIA specifics, butterfly pricing.
+description: Quick reference for ZAR IRS / OIS calculations: spreads in basis points, DV01 / PV01, USD-to-ZAR nominal conversion, FRA and forward-forward conventions, ZARONIA specifics, butterfly pricing.
 ---
 
 # ZAR IRS Finance Reference
@@ -140,7 +140,7 @@ Example: 3y = 7.005, 5y = 7.16, 7y = 7.395
 
 Sizing convention is nominal-weighted **1:2:1** (wings half each, belly twice the wings).
 
-Eligible products: swaps and OIS curves with a continuous tenor structure. Avoid FRAs, IMMs, FwdFwds, or term maturities -- the 2:1:1 relationship breaks down.
+Eligible products: swaps and OIS curves with a continuous tenor structure. Avoid FRAs, IMMs, FwdFwds, or term maturities: the 2:1:1 relationship breaks down.
 
 Execution model in a multilateral platform:
 

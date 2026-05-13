@@ -1,5 +1,6 @@
 # claude-skills-fintech-ops
 
+[![Validate](https://github.com/fawraw/claude-skills-fintech-ops/actions/workflows/validate.yml/badge.svg)](https://github.com/fawraw/claude-skills-fintech-ops/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/github/license/fawraw/claude-skills-fintech-ops)](LICENSE)
 [![Latest release](https://img.shields.io/github/v/release/fawraw/claude-skills-fintech-ops)](https://github.com/fawraw/claude-skills-fintech-ops/releases)
 ![Skills](https://img.shields.io/badge/skills-14-blue)
